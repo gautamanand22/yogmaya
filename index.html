@@ -65,119 +65,114 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+    <!-- Hero Section - ULTRA-PREMIUM 2026 REDESIGN -->
   <section id="home" class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="https://cdn.coverr.co/videos/coverr-medical-professional-in-surgery-6549/1080p.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
+    <!-- 1. Background Layer (Layered Cinema) -->
+    <div class="hero-bg-wrapper">
+      <video class="hero-video" autoplay muted loop playsinline poster="myassets/img/hero-poster.jpg" loading="lazy">
+        <source src="https://cdn.coverr.co/videos/coverr-medical-professional-in-surgery-6549/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-film-grain"></div>
+      <div class="overlay-vignette"></div>
+      <div class="overlay-gradient"></div>
+    </div>
     
-    <div class="container">
-      <div class="hero-split">
-        <!-- Left Content -->
-        <div class="hero-left">
-          <div class="hero-badge">
-            <i class="fas fa-award"></i>
-            <span>Bihar's Most Trusted Eye Hospital Since 2017</span>
+    <div class="container-fluid hero-full-container">
+      <div class="hero-content-grid">
+        
+        <!-- Left Content: High-Impact Typography -->
+        <div class="hero-text-content">
+          <div class="hero-badge-pill">
+            <i class="fas fa-crown"></i>
+            <span>Premier Eye Care Institute</span>
           </div>
           
-          <h1 class="hero-main-title">
-            Your Vision is Our <span class="gradient-text">Priority</span>
+          <h1 class="hero-title">
+            The Future of <br>
+            <span class="text-gradient-gold">Precision Vision</span>
           </h1>
           
-          <div class="typing-container">
-            <span class="typing-prefix">Specialized in </span>
-            <span class="typed-text" id="typedText"></span>
-            <span class="typing-cursor">|</span>
+          <div class="typing-wrapper">
+             <span class="static-text">Excellence in Advanced LASIK Procedures</span>
           </div>
           
-          <p class="hero-description">
-            Experience world-class eye care with advanced technology and UK-trained specialists. 
-            From routine eye exams to complex surgeries, we provide comprehensive care for your entire family.
+          <p class="hero-subtitle">
+            Experience the confluence of world-class medical expertise and 5-star hospitality. 
+            Dr. Bhardwaj’s flagship center offers advanced bladeless solutions in an environment of absolute trust and comfort.
           </p>
           
-          <div class="hero-features-list">
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>Bladeless Cataract Surgery</span>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>Same Day Surgery Available</span>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>12+ Insurance Partners</span>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>Free Eye Check-up Camps</span>
-            </div>
+          <div class="hero-features">
+            <div class="feature-pill"><i class="fas fa-check-circle"></i> UK-Standard Clinical Safety</div>
+            <div class="feature-pill"><i class="fas fa-check-circle"></i> Bladeless Femto-Cataract</div>
+            <div class="feature-pill"><i class="fas fa-check-circle"></i> Premium IOL Specialists</div>
+            <div class="feature-pill"><i class="fas fa-check-circle"></i> VIP Patient Lounge</div>
           </div>
           
-          <div class="hero-cta-group">
-            <a href="#contact" class="btn btn-primary btn-large">
-              <i class="fas fa-calendar-check"></i>
-              <span>Book Free Consultation</span>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-premium-primary">
+              <span>Book VIP Consultation</span>
             </a>
-            <a href="tel:+917070187777" class="btn btn-outline btn-large">
+            <a href="tel:+917070187777" class="btn-premium-outline">
               <i class="fas fa-phone-alt"></i>
-              <span>Call: 70701 87777</span>
+              <span>Concierge: 70701 87777</span>
             </a>
           </div>
           
-          <div class="hero-stats-mini">
-            <div class="stat-mini">
-              <strong>15,000+</strong>
-              <span>Happy Patients</span>
-            </div>
-            <div class="stat-mini">
-              <strong>10,000+</strong>
+          <div class="hero-footer-stats">
+            <div class="stat-item-mini">
+              <strong>15k+</strong>
               <span>Successful Surgeries</span>
             </div>
-            <div class="stat-mini">
-              <strong>4.9/5</strong>
-              <span>Patient Rating</span>
+            <div class="stat-item-mini">
+              <strong>99%</strong>
+              <span>Patient Satisfaction</span>
+            </div>
+            <div class="stat-item-mini">
+              <strong>4.9</strong>
+              <span>Google Rating</span>
             </div>
           </div>
         </div>
         
-        <!-- Right Image -->
-        <div class="hero-right">
-          <div class="doctor-card">
-            <img src="myassets/img/1_dr.jpeg" alt="Dr. Utkarsh Bhardwaj">
-            <div class="doctor-info">
+        <!-- Right Content: 3D Doctor Card (Preserved Assets) -->
+        <div class="hero-visual-content">
+          <div class="doctor-card-wrapper" id="doctorCard3D">
+            
+            <div class="doctor-card-glass">
+              <img src="myassets/img/1_dr.jpeg" alt="Dr. Utkarsh Bhardwaj - Director" class="doctor-img">
+            </div>
+            
+            <!-- Floating Trust Badges -->
+            <!-- <div class="floating-badge badge-1">
+               <div class="badge-icon"><i class="fas fa-star"></i></div>
+               <div class="badge-text">
+                 <strong>5.0 Rating</strong>
+                 <span>Patient Satisfaction</span>
+               </div>
+            </div>
+            
+            <div class="floating-badge badge-2">
+               <div class="badge-icon"><i class="fas fa-user-md"></i></div>
+               <div class="badge-text">
+                 <strong>15k+</strong>
+                 <span>Successful Surgeries</span>
+               </div>
+            </div>
+             -->
+            <!-- Existing Content -->
+            <div class="doctor-info-glass">
               <h3>Dr. Utkarsh Bhardwaj</h3>
               <p>MBBS, MS (Ophthalmology), FICO (UK)</p>
-              <div class="credentials-badges">
-                <span class="badge">15+ Years Experience</span>
-                <span class="badge">UK Trained</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="floating-badge badge-1">
-            <i class="fas fa-microscope"></i>
-            <div>
-              <strong>Latest Equipment</strong>
-              <small>State-of-the-art Technology</small>
-            </div>
-          </div>
-          
-          <div class="floating-badge badge-2">
-            <i class="fas fa-shield-check"></i>
-            <div>
-              <strong>100% Safe</strong>
-              <small>Certified Procedures</small>
             </div>
           </div>
         </div>
       </div>
     </div>
     
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll to Explore</span>
+    <!-- Premium Scroll Indicator -->
+    <div class="scroll-mouse">
+      <div class="scroll-line" style="height: 40px; width: 1px; background: rgba(255,255,255,0.5); margin-bottom: 10px;"></div>
+      <span class="scroll-text">Discover Perfection</span>
     </div>
   </section>
 
@@ -343,7 +338,7 @@
           </div>
         </div>
         <div class="about-content">
-          <p class="about-text" style="font-size: 1.1rem; color: #333; margin-bottom: 30px;">
+          <p class="about-text">
             Established in April 2017, Yogmaya Devi Eye Hospital has been at the forefront of providing world-class, 
             affordable, and compassionate eye care to the people of Bihar and surrounding regions. Our mission is to 
             ensure every patient receives clinical excellence combined with personalized attention. We combine decades of experience 
@@ -1189,5 +1184,138 @@
   
   <!-- Custom JS -->
   <script src="myassets/js/eye-hospital.js"></script>
+
+  <!-- HERO REDESIGN SPECIFIC ANIMATIONS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 1. Text Entrance (Staggered Fade + Slide)
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      
+      tl.from(".hero-badge-pill", { y: 30, opacity: 0, duration: 1, delay: 0.5 })
+        .from(".hero-title", { y: 40, opacity: 0, duration: 1.2 }, "-=0.8")
+        .from(".typing-wrapper", { y: 20, opacity: 0, duration: 0.8 }, "-=0.8")
+        .from(".hero-subtitle", { y: 20, opacity: 0, duration: 0.8 }, "-=0.6")
+        .from(".feature-pill", { x: -20, opacity: 0, stagger: 0.1, duration: 0.6 }, "-=0.6")
+        .from(".hero-actions a", { y: 20, opacity: 0, stagger: 0.2, duration: 0.6 }, "-=0.4")
+        .from(".hero-footer-stats", { opacity: 0, duration: 1 }, "-=0.4");
+
+      // 2. Doctor Card Float & 3D (Refined)
+      const doctorCard = document.querySelector(".doctor-card-wrapper");
+      if(doctorCard) {
+          // Entrance Pop
+          gsap.from(doctorCard, { 
+              scale: 0.8, 
+              opacity: 0, 
+              rotationY: 15, 
+              duration: 1.5, 
+              ease: "back.out(1.2)", 
+              delay: 0.2 
+          });
+
+          // Gentle Float (Yoyo)
+          gsap.to(doctorCard, {
+              y: -15,
+              duration: 4,
+              ease: "sine.inOut",
+              repeat: -1,
+              yoyo: true
+          });
+
+          // Mouse Parallax REMOVED as per request for static clean look
+          /*
+          if(window.matchMedia("(min-width: 992px)").matches) {
+              document.addEventListener("mousemove", (e) => {
+                  const x = (e.clientX / window.innerWidth - 0.5) * 20;
+                  const y = (e.clientY / window.innerHeight - 0.5) * 20;
+                  
+                  gsap.to(doctorCard, {
+                      rotationY: x,
+                      rotationX: -y,
+                      duration: 1,
+                      ease: "power2.out"
+                  });
+              });
+          }
+          */
+      }
+
+      // 3. Magnetic Badges
+      const badges = document.querySelectorAll(".float-badge");
+      badges.forEach((badge, i) => {
+          // Staggered Entrance
+          gsap.from(badge, {
+              scale: 0,
+              opacity: 0,
+              duration: 0.8,
+              delay: 2 + (i * 0.2), // Wait for main entrance
+              ease: "elastic.out(1, 0.5)"
+          });
+
+          // Individual Float
+          gsap.to(badge, {
+              y: (i === 0 ? -10 : 10),
+              duration: 3 + i,
+              ease: "sine.inOut",
+              repeat: -1,
+              yoyo: true,
+              delay: i // Offset start
+          });
+      });
+      
+      // 4. Video Zoom Parallax
+      gsap.to(".hero-video", {
+          scale: 1.1,
+          scrollTrigger: {
+              trigger: ".hero",
+              start: "top top",
+              end: "bottom top",
+              scrub: true
+          }
+      });
+      
+      // 5. Typing Animation (Re-init for new wrapper)
+      const typedTextElement = document.getElementById('typedText');
+      if(typedTextElement) {
+        const texts = [
+          'Bladeless Cataract Surgery',
+          'Advanced LASIK Procedures',
+          'Glaucoma Treatment',
+          'Retina Care & Surgery',
+          'Corneal Transplant',
+          'Pediatric Eye Care'
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        function typeText() {
+          const currentText = texts[textIndex];
+          if (isDeleting) {
+            typedTextElement.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+          } else {
+            typedTextElement.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+          }
+          
+          let typeSpeed = isDeleting ? 50 : 100;
+          
+          if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            typeSpeed = 2000;
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+            typeSpeed = 500;
+          }
+          
+          setTimeout(typeText, typeSpeed);
+        }
+        typeText();
+      }
+    });
+  </script>
 </body>
 </html>
