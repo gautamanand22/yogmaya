@@ -119,80 +119,80 @@ function typeText() {
 setTimeout(typeText, 1000);
 
 // Hero content animation
-const heroTimeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+const heroTimeline = gsap.timeline({ defaults: { ease: 'power2.out' } });
 
 heroTimeline
   .from('.hero-badge', { 
     opacity: 0, 
-    y: 30, 
-    duration: 0.8,
-    delay: 0.3,
+    y: 20, 
+    duration: 0.5,
+    delay: 0.1,
     clearProps: "all"
   })
   .from('.hero-main-title', { 
-    opacity: 0, 
-    y: 50, 
-    duration: 0.8,
-    clearProps: "all" 
-  }, '-=0.4')
-  .from('.typing-container', { 
-    opacity: 0, 
-    y: 30, 
-    duration: 0.8,
-    clearProps: "all" 
-  }, '-=0.4')
-  .from('.hero-description', { 
     opacity: 0, 
     y: 30, 
     duration: 0.6,
     clearProps: "all" 
   }, '-=0.3')
+  .from('.typing-container', { 
+    opacity: 0, 
+    y: 20, 
+    duration: 0.5,
+    clearProps: "all" 
+  }, '-=0.3')
+  .from('.hero-description', { 
+    opacity: 0, 
+    y: 20, 
+    duration: 0.5,
+    clearProps: "all" 
+  }, '-=0.3')
   .from('.feature-item', { 
     opacity: 0, 
-    x: -30, 
-    duration: 0.5, 
-    stagger: 0.1,
+    x: -20, 
+    duration: 0.4, 
+    stagger: 0.05,
     clearProps: "all" 
   }, '-=0.3')
   .from('.hero-cta-group .btn', { 
     opacity: 0, 
-    y: 30, 
-    duration: 0.6, 
-    stagger: 0.2,
+    y: 20, 
+    duration: 0.4, 
+    stagger: 0.1,
     clearProps: "all" 
   }, '-=0.2')
   .from('.stat-mini', { 
     opacity: 0, 
-    y: 20, 
-    duration: 0.5, 
-    stagger: 0.15,
+    y: 15, 
+    duration: 0.3, 
+    stagger: 0.1,
     clearProps: "all" 
-  }, '-=0.3')
+  }, '-=0.2')
   .from('.doctor-card', { 
     opacity: 0, 
-    scale: 0.9, 
-    duration: 1,
-    ease: 'back.out(1.7)',
+    scale: 0.95, 
+    duration: 0.6,
+    ease: 'back.out(1.2)',
     clearProps: "all" 
-  }, '-=0.8')
+  }, '-=0.4')
   .from('.floating-badge', { 
     opacity: 0, 
-    scale: 0, 
-    duration: 0.6, 
-    stagger: 0.2,
-    ease: 'back.out(1.7)',
+    scale: 0.5, 
+    duration: 0.4, 
+    stagger: 0.1,
+    ease: 'back.out(1.2)',
     clearProps: "all" 
-  }, '-=0.5')
+  }, '-=0.3')
   .from('.scroll-indicator', { 
     opacity: 0, 
-    duration: 0.8,
+    duration: 0.5,
     clearProps: "all" 
-  }, '-=0.3');
+  }, '-=0.2');
 
 // Hero video overlay animation
 gsap.from('.hero-overlay', {
   opacity: 0,
-  duration: 1.5,
+  duration: 0.8,
   ease: 'power2.inOut'
 });
 
@@ -238,13 +238,13 @@ gsap.utils.toArray('.section-label, .section-title, .section-description').forEa
   gsap.from(element, {
     scrollTrigger: {
       trigger: element,
-      start: 'top 85%',
+      start: 'top 90%', // Trigger earlier
       toggleActions: 'play none none none'
     },
     opacity: 0,
-    y: 50,
-    duration: 0.8,
-    ease: 'power3.out',
+    y: 30, // Less distance
+    duration: 0.5, // Faster
+    ease: 'power2.out', // Snappier ease
     clearProps: "all"
   });
 });
@@ -253,41 +253,41 @@ gsap.utils.toArray('.section-label, .section-title, .section-description').forEa
 gsap.from('.about-image', {
   scrollTrigger: {
     trigger: '.about',
-    start: 'top 70%',
+    start: 'top 75%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  x: -100,
-  duration: 1,
-  ease: 'power3.out',
+  x: -50, // Less distance
+  duration: 0.6,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
 gsap.from('.about-content', {
   scrollTrigger: {
     trigger: '.about',
-    start: 'top 70%',
+    start: 'top 75%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  x: 100,
-  duration: 1,
-  ease: 'power3.out',
-  delay: 0.2,
+  x: 50,
+  duration: 0.6,
+  ease: 'power2.out',
+  delay: 0.1, // Reduced delay
   clearProps: "all"
 });
 
 gsap.from('.about-feature', {
   scrollTrigger: {
     trigger: '.about-features',
-    start: 'top 80%',
+    start: 'top 85%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  y: 50,
-  duration: 0.6,
-  stagger: 0.2,
-  ease: 'power3.out',
+  y: 30,
+  duration: 0.4,
+  stagger: 0.1, // Faster stagger
+  ease: 'power2.out',
   clearProps: "all"
 });
 
@@ -295,14 +295,14 @@ gsap.from('.about-feature', {
 gsap.from('.service-card', {
   scrollTrigger: {
     trigger: '.services-grid',
-    start: 'top 75%',
+    start: 'top 80%', // Earlier trigger
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  y: 80,
-  duration: 0.8,
-  stagger: 0.15,
-  ease: 'power3.out',
+  y: 40,
+  duration: 0.5,
+  stagger: 0.1,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
@@ -310,14 +310,14 @@ gsap.from('.service-card', {
 gsap.from('.equipment-card', {
   scrollTrigger: {
     trigger: '.equipment-grid',
-    start: 'top 75%',
+    start: 'top 80%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  scale: 0.8,
-  duration: 0.6,
-  stagger: 0.1,
-  ease: 'back.out(1.4)',
+  scale: 0.9,
+  duration: 0.4,
+  stagger: 0.05,
+  ease: 'back.out(1.2)',
   clearProps: "all"
 });
 
@@ -325,54 +325,54 @@ gsap.from('.equipment-card', {
 gsap.from('.doctor-image', {
   scrollTrigger: {
     trigger: '.doctor',
-    start: 'top 70%',
+    start: 'top 75%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  x: -100,
-  duration: 1,
-  ease: 'power3.out',
+  x: -50,
+  duration: 0.6,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
 gsap.from('.doctor-content', {
   scrollTrigger: {
     trigger: '.doctor',
-    start: 'top 70%',
+    start: 'top 75%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  x: 100,
-  duration: 1,
-  ease: 'power3.out',
-  delay: 0.2,
+  x: 50,
+  duration: 0.6,
+  ease: 'power2.out',
+  delay: 0.1,
   clearProps: "all"
 });
 
 gsap.from('.credential', {
   scrollTrigger: {
     trigger: '.doctor-credentials',
-    start: 'top 85%',
+    start: 'top 90%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  scale: 0.8,
-  duration: 0.5,
-  stagger: 0.1,
-  ease: 'back.out(1.7)',
+  scale: 0.9,
+  duration: 0.4,
+  stagger: 0.05,
+  ease: 'back.out(1.2)',
   clearProps: "all"
 });
 
 gsap.from('.expertise-tags span', {
   scrollTrigger: {
     trigger: '.expertise-tags',
-    start: 'top 85%',
+    start: 'top 90%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  y: 20,
-  duration: 0.4,
-  stagger: 0.05,
+  y: 15,
+  duration: 0.3,
+  stagger: 0.03,
   ease: 'power2.out',
   clearProps: "all"
 });
@@ -381,14 +381,14 @@ gsap.from('.expertise-tags span', {
 gsap.from('.insurance-logo', {
   scrollTrigger: {
     trigger: '.insurance-grid',
-    start: 'top 75%',
+    start: 'top 85%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
   scale: 0.8,
-  duration: 0.5,
-  stagger: 0.08,
-  ease: 'back.out(1.7)',
+  duration: 0.4,
+  stagger: 0.05,
+  ease: 'back.out(1.2)',
   clearProps: "all"
 });
 
@@ -396,14 +396,14 @@ gsap.from('.insurance-logo', {
 gsap.from('.location-card', {
   scrollTrigger: {
     trigger: '.locations-grid',
-    start: 'top 75%',
+    start: 'top 80%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  y: 80,
-  duration: 0.8,
-  stagger: 0.2,
-  ease: 'power3.out',
+  y: 40,
+  duration: 0.5,
+  stagger: 0.1,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
@@ -411,28 +411,28 @@ gsap.from('.location-card', {
 gsap.from('.testimonial-card', {
   scrollTrigger: {
     trigger: '.testimonials-grid',
-    start: 'top 75%',
+    start: 'top 80%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  y: 60,
-  duration: 0.8,
-  stagger: 0.15,
-  ease: 'power3.out',
+  y: 40,
+  duration: 0.5,
+  stagger: 0.1,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
 gsap.from('.testimonial-stats .stat-box', {
   scrollTrigger: {
     trigger: '.testimonial-stats',
-    start: 'top 80%',
+    start: 'top 85%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  scale: 0.8,
-  duration: 0.6,
-  stagger: 0.1,
-  ease: 'back.out(1.7)',
+  scale: 0.9,
+  duration: 0.4,
+  stagger: 0.05,
+  ease: 'back.out(1.2)',
   clearProps: "all"
 });
 
@@ -440,14 +440,14 @@ gsap.from('.testimonial-stats .stat-box', {
 gsap.from('.gallery-item', {
   scrollTrigger: {
     trigger: '.gallery-grid',
-    start: 'top 75%',
+    start: 'top 80%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  scale: 0.9,
-  duration: 0.6,
-  stagger: 0.1,
-  ease: 'power3.out',
+  scale: 0.95,
+  duration: 0.5,
+  stagger: 0.05,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
@@ -455,14 +455,14 @@ gsap.from('.gallery-item', {
 gsap.from('.footer-col', {
   scrollTrigger: {
     trigger: '.footer',
-    start: 'top 85%',
+    start: 'top 90%',
     toggleActions: 'play none none none'
   },
   opacity: 0,
-  y: 50,
-  duration: 0.6,
-  stagger: 0.15,
-  ease: 'power3.out',
+  y: 30,
+  duration: 0.5,
+  stagger: 0.1,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
@@ -473,13 +473,13 @@ gsap.from('.footer-col', {
 gsap.from('.process-step', {
   scrollTrigger: {
     trigger: '.process',
-    start: 'top 80%',
+    start: 'top 85%',
   },
-  y: 50,
+  y: 30,
   opacity: 0,
-  duration: 0.8,
-  stagger: 0.2,
-  ease: 'power3.out',
+  duration: 0.5,
+  stagger: 0.1,
+  ease: 'power2.out',
   clearProps: "all"
 });
 
@@ -640,7 +640,7 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  rootMargin: '50px'
+  rootMargin: '600px' // Increased to 600px to load images much earlier
 });
 
 images.forEach(img => imageObserver.observe(img));
